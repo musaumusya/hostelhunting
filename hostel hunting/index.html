@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Hunter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hostel Hunter </h1>
+    </header>
+    <main>
+        <section class="filter">
+            <label for="location">Filter by Location:</label>
+            <input type="text" id="location" placeholder="Enter location...">
+            <button onclick="filterHostels()">Search</button>
+        </section>
+        <section class="hostel-list" id="hostelList">
+            <div class="hostel" data-location="GAVANA">
+                <h2>GAVANA</h2>
+                <p>Location: Notts suites</p>
+                <p>Price: 20000Kes per sem</p>
+            </div>
+            <div class="hostel" data-location="TAIRI MBILI">
+                <h2>TAIRI MBILI</h2>
+                <p>Location: Hghway hostels</p>
+                <p>Price: 21000Kes per sem</p>
+            </div>
+            <div class="hostel" data-location="CHERIKA">
+                <h2>CHERIKA</h2>
+                <p>Location: Amazing Grace hostel</p>
+                <p>Price: 22000kes per sem</p>
+            </div>
+            <div class="hostel" data-location="NYUMBA TATU">
+                <h2>NYUMBA TATU</h2>
+                <p>Location: Muhoini hostel</p>
+                <p>Price: 18000kes per sem</p>
+            </div>
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Co-site Suites</p>
+                <p>Price: 8000 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Tumaini Hostel</p>
+                <p>Price: 7500 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Mountain View Hostel</p>
+                <p>Price: 8500 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Nyahururu Residences</p>
+                <p>Price: 7000 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Laikipia Hill Hostel</p>
+                <p>Price: 7500 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Eagle Nest Hostel</p>
+                <p>Price: 7800 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Nyahururu Prime Hostel</p>
+                <p>Price: 7900 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: BlueSky Hostel</p>
+                <p>Price: 7000 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="CHERIKA">
+                <h2>CHERIKA</h2>
+                <p>Location: Laikipia View Hostel</p>
+                <p>Price: 7200 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Nyahururu Place Hostel</p>
+                <p>Price: 8100 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Comfort Inn Hostel</p>
+                <p>Price: 8500 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Oasis Hostel</p>
+                <p>Price: 8800 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="GAVANA">
+                <h2>GAVANA</h2>
+                <p>Location: Golden Bell Hostel</p>
+                <p>Price: 7800 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="TAIRI MBILI">
+                <h2>TAIRI MBILI</h2>
+                <p>Location: Lakeside Hostel</p>
+                <p>Price: 8500 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: The Nest Hostel</p>
+                <p>Price: 7700 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Hillside View Hostel</p>
+                <p>Price: 7900 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="GAVANA">
+                <h2>GAVANA</h2>
+                <p>Location: Silver Star Hostel</p>
+                <p>Price: 7600 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Majestic Hostel</p>
+                <p>Price: 8400 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="CHERIKA">
+                <h2>CHERIKA</h2>
+                <p>Location: Greenfields Hostel</p>
+                <p>Price: 7100 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="TAIRI MBILI">
+                <h2>TAIRI MBILI</h2>
+                <p>Location: Riverside Hostel</p>
+                <p>Price: 7300 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Safari View Hostel</p>
+                <p>Price: 8000 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Pinecrest Hostel</p>
+                <p>Price: 8700 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Crown Heights Hostel</p>
+                <p>Price: 8900 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Valley View Hostel</p>
+                <p>Price: 7600 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Evergreen Hostel</p>
+                <p>Price: 7300 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYUMBA TATU">
+                <h2>NYUMBA TATU</h2>
+                <p>Location: Serenity Hostel</p>
+                <p>Price: 8000 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Ridgeview Hostel</p>
+                <p>Price: 7800 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Sunset View Hostel</p>
+                <p>Price: 7500 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: The Horizon Hostel</p>
+                <p>Price: 8000 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="NYAHURURU TOWN">
+                <h2>NYAHURURU TOWN</h2>
+                <p>Location: Sunshine Hostel</p>
+                <p>Price: 7200 KES per month</p>
+            </div>
+            
+            <div class="hostel" data-location="CHERIKA">
+                <h2>CHERIKA</h2>
+                <p>Location: Palm Grove Hostel</p>
+                <p>Price: 7900 KES per month</p>
+            </div>
+            
+            
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
